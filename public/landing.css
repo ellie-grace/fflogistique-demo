@@ -297,7 +297,7 @@ margin-right: auto;
 }
 .section-text {
 	min-width: 400px;
-	z-index: 1;
+	z-index: -1;
 	background: #F3F3F0;
 color: #806E65;
 	padding-top: 140px;
@@ -432,11 +432,7 @@ display: none;
 }
 
 @media (max-width: 850px) {
-	/* .filler {
-		background: #D9D8CF;
-		background-position: fixed;
-		height: 120px;
-	} */
+
 	#landing-section {
 		margin-top: 100px;
 		-webkit-box-orient: vertical;
@@ -489,4 +485,10 @@ display: none;
 .column p {
 	padding-top: 3vh;
 }
+}
+@media (max-width: 550px) {
+	.section-map {
+		display: none;
+	}
+
 }
