@@ -69,3 +69,11 @@ var doParts=["dominique","fflogistique","fr","&#46;","&#64;"];
 var doEmail=doParts[0]+doParts[4]+doParts[1]+doParts[3]+doParts[2];
 var emaildo=document.querySelector('#email-do');
 emaildo.innerHTML=doEmail;
+
+
+
+// mariusz
+var maParts=["mariusz","fflogistique","co.uk","&#46;","&#64;"];
+var maEmail=maParts[0]+maParts[4]+maParts[1]+maParts[3]+maParts[2];
+var emailma=document.querySelector('#email-ma');
+emailma.innerHTML=maEmail;
