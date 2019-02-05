@@ -6,6 +6,8 @@ html a {
 
 html,
 body {
+  z-index: -1000;
+  background-color: #f3f3f0;
   width: 100vw;
   overflow-x: hidden;
   margin: 0;
@@ -43,7 +45,7 @@ body {
 }
 
 header {
-  z-index: 10;
+  z-index: 100;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -205,9 +207,10 @@ footer ul li:nth-of-type(1) {
 @media (max-width: 550px) {
     header {
       background: #d9d8cf;
-       flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+           flex-wrap: wrap;
        width: 100vw;
-       height: 120px;
+       height: 125px;
        
     }
     .header-left img {
@@ -231,14 +234,27 @@ footer ul li:nth-of-type(1) {
     .nav-items ul {
       margin-top: 0;
       height: 8px;
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
     }
     
     .nav-right ul {
       width: 100vw;
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       
     }
+    footer ul{
+      width: 100vw;
+      padding-left: 0;
+      margin-left: 0;
+    }
+   footer ul li {
+     list-style: none;
+    
    
+   }
    
 }
